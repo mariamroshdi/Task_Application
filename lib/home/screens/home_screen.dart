@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
           actions: [
             ElevatedButton(onPressed: (){
               context.read<TasksCubit>().addTask();
-              Navigator.of(context)..pop();
+              Navigator.of(context).pop();
             }, child: Text("Add",style: TextStyle(fontWeight: FontWeight.bold),
             )),
             ElevatedButton(onPressed: (){
