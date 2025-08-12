@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
       (){
       showDialog(context: context, builder: (context){
         return AlertDialog(
-          title: Text("Add new Task",style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+          title: Text("Add new Task",style:Theme.of(context).textTheme.displaySmall?.copyWith(color: Colors.blue),
           ),
           content: TextField(
             controller: context.read<TasksCubit>().newTask,
